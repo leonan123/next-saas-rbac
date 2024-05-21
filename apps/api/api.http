@@ -31,3 +31,12 @@ Content-Type: application/json
   "email": "leonanorth3@acme.com"
 } 
 
+### @name reset-password
+# POST {{baseUrl}}/password/reset
+POST http://localhost:3333/password/reset
+Content-Type: application/json
+
+{
+  "code": "563a126f-cc2d-457f-9607-677ae35d527b",
+  "password": "654321",
+} 

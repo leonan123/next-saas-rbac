@@ -26,8 +26,6 @@ export const errorHandler: FastifyErrorHandler = (error, request, reply) => {
     })
   }
 
-  console.log(error.code)
-
   if (error.code === 'FST_JWT_AUTHORIZATION_TOKEN_INVALID') {
     return reply.status(400).send({
       message: 'Invalid authorization token.',
