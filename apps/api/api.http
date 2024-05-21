@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3333
+
+# @name create-account
+POST {{baseUrl}}/users 
+Content-Type: application/json
+
+{
+  "name": "Leonan",
+  "email": "leonanorth3@acme.com",
+  "password": "123456"
+}
+
+### @name authenticate-with-password
+POST {{baseUrl}}/sessions/password 
+Content-Type: application/json
+
+{
+  "email": "leonanorth3@acme.com",
+  "password": "123456"
+}
+
+### @name authenticate-with-password
+GET {{baseUrl}}/profile 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYjFmNjNlNC01YTQ3LTRhODAtYmRkOS01ZTFkOTU3NjVhZWMiLCJpYXQiOjE3MTYyNjQwODcsImV4cCI6MTcxNjg2ODg4N30.jVUfFuSraS2anicqKaYAI7aAhfhi9x147M0RnzN8UPY
+
