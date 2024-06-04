@@ -19,9 +19,9 @@ Content-Type: application/json
   "password": "654321"
 }
 
-### @name authenticate-with-password
+### @name authenticate
 GET {{baseUrl}}/profile 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYjFmNjNlNC01YTQ3LTRhODAtYmRkOS01ZTFkOTU3NjVhZWMiLCJpYXQiOjE3MTYyNjQwODcsImV4cCI6MTcxNjg2ODg4N30.jVUfFuSraS2anicqKaYAI7aAhfhi9x147M0RnzN8UPY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZTU5YzU0MC03NDMzLTQzOTEtODc5Zi0xMDIzZDhhODU1OWQiLCJpYXQiOjE3MTc0Nzc3MTEsImV4cCI6MTcxODA4MjUxMX0.V1huLVnf5ibi-UID5TSa1Xbg85s4k9fK0WG-jpsg8fY
 
 ### @name request-password-recover
 POST {{baseUrl}}/password/recover
@@ -36,7 +36,7 @@ POST {{baseUrl}}/sessions/github
 Content-Type: application/json
 
 {
-  "code": "df05b9fb71be31806b4d"
+  "code": "4261e01beec254ab9f09"
 }
 
 ### @name reset-password
