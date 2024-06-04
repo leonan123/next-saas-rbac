@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
   "email": "leonanorth3@acme.com",
-  "password": "123456"
+  "password": "654321"
 }
 
 ### @name authenticate-with-password
@@ -29,14 +29,21 @@ Content-Type: application/json
 
 {
   "email": "leonanorth3@acme.com"
-} 
+}
+
+### @name autheticate-with-github
+POST {{baseUrl}}/sessions/github
+Content-Type: application/json
+
+{
+  "code": "df05b9fb71be31806b4d"
+}
 
 ### @name reset-password
-# POST {{baseUrl}}/password/reset
-POST http://localhost:3333/password/reset
+POST {{baseUrl}}/password/reset
 Content-Type: application/json
 
 {
   "code": "563a126f-cc2d-457f-9607-677ae35d527b",
-  "password": "654321",
+  "password": "654321"
 } 
