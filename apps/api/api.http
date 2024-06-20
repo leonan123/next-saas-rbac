@@ -106,8 +106,8 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
 {
-  "name": "my project 2",
-  "description": "My second project"
+  "name": "my project 3",
+  "description": "My tertiary project"
 }
 
 ### @name delete-project
@@ -116,7 +116,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
 ### @name get-project
-GET {{baseUrl}}/organizations/acme-admin/projects/my-project-2
+GET {{baseUrl}}/organizations/acme-admin/projects/my-project-3
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
@@ -124,3 +124,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
 GET {{baseUrl}}/organizations/acme-admin/projects
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+### @name update-project
+PUT {{baseUrl}}/organizations/acme-admin/projects/5a22cb3a-08c8-45cc-af3a-267707bd9eee
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+{
+  "name": "updated",
+  "description": ""
+}
