@@ -15,7 +15,7 @@ POST {{baseUrl}}/sessions/password
 Content-Type: application/json
 
 {
-  "email": "leonanorth3@acme.com",
+  "email": "johndoe@gmail.com",
   "password": "123456"
 }
 
@@ -51,9 +51,9 @@ Content-Type: application/json
 # ORGS
 
 ### @name create-organization
-POST {{baseUrl}}/organization
+POST {{baseUrl}}/organizations
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4YmM4MDBiZC1hYzNhLTQwNzItODJhMS0zY2M4NjUzY2QzZjQiLCJpYXQiOjE3MTgwNzcyNTksImV4cCI6MTcxODY4MjA1OX0.Jzd9DYKGaLHVeUwA88wnsJZTs88hoqIYEfY7Ir9m2K0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
 {
   "name": "Rocketseat",
@@ -62,6 +62,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4YmM4MDBiZ
 }
 
 ### @name get-membership
-GET {{baseUrl}}/organization/rocketseat/membership
+GET {{baseUrl}}/organizations/acme-admin/membership
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4YmM4MDBiZC1hYzNhLTQwNzItODJhMS0zY2M4NjUzY2QzZjQiLCJpYXQiOjE3MTgwNzcyNTksImV4cCI6MTcxODY4MjA1OX0.Jzd9DYKGaLHVeUwA88wnsJZTs88hoqIYEfY7Ir9m2K0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
