@@ -106,8 +106,12 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
 {
-  "name": "my-project",
-  "description": "My first project"
+  "name": "my-project-2",
+  "description": "My second project"
 }
 
+### @name delete-project
+DELETE {{baseUrl}}/organizations/acme-admin/projects/80a50f87-a95d-441a-b41e-9363c172986f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
 
