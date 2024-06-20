@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ### @name authenticate
 GET {{baseUrl}}/profile 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZTU5YzU0MC03NDMzLTQzOTEtODc5Zi0xMDIzZDhhODU1OWQiLCJpYXQiOjE3MTc0Nzc3MTEsImV4cCI6MTcxODA4MjUxMX0.V1huLVnf5ibi-UID5TSa1Xbg85s4k9fK0WG-jpsg8fY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 ### @name request-password-recover
 POST {{baseUrl}}/password/recover
@@ -55,7 +55,7 @@ Content-Type: application/json
 ### @name create-organization
 POST {{baseUrl}}/organizations
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 {
   "name": "Rocketseat",
@@ -66,25 +66,34 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
 ### @name get-membership
 GET {{baseUrl}}/organizations/acme-admin/membership
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 ### @name get-organization
 GET {{baseUrl}}/organizations/acme-admin
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 ### @name get-organizations
 GET {{baseUrl}}/organizations
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 ### @name update-organization
 PUT {{baseUrl}}/organizations/acme-admin
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg5MTI0ODEsImV4cCI6MTcxOTUxNzI4MX0.hs2INVF_X1O1_N9sEZRilTVW7LITjwzcl87j9BE_Rg8
 
 {
   "name": "Acme Inc (Admin) - Updated",
   "domain": "acme.com.br",
   "shouldAttachUsersByDomain": true
+}
+
+### @name transfer-organization
+PATCH {{baseUrl}}/organizations/acme-admin/owner
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+{
+  "transferToOwnerId": "2eee4ddd-e130-430d-8d6b-429e96de2f2a"
 }
