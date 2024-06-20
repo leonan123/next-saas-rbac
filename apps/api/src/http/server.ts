@@ -26,6 +26,7 @@ import { getOrganizations } from './routes/orgs/get-organizations'
 import { shutdownOrganization } from './routes/orgs/shutdown-organization'
 import { transferOrganization } from './routes/orgs/transfer-organization'
 import { updateOrganization } from './routes/orgs/update-organization'
+import { createProject } from './routes/projects/create-project'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -65,6 +66,7 @@ app.register(fastifyJwt, {
 
 app.register(fastifyCors)
 
+// -------- ACCOUNT --------
 app.register(createAccount)
 app.register(authenticateWithPassword)
 app.register(authenticateWithGithub)
@@ -72,6 +74,7 @@ app.register(getProfile)
 app.register(requestPasswordRecover)
 app.register(resetPassword)
 
+// -------- ORGANIZATIONS --------
 app.register(createOrganization)
 app.register(getMembership)
 app.register(getOrganization)
@@ -79,6 +82,9 @@ app.register(getOrganizations)
 app.register(updateOrganization)
 app.register(shutdownOrganization)
 app.register(transferOrganization)
+
+// -------- ORGANIZATIONS - PROJECTS --------
+app.register(createProject)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log(`🔥 HTTP server running in http://localhost:${env.SERVER_PORT}`)

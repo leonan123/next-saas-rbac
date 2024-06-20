@@ -97,3 +97,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
 {
   "transferToOwnerId": "2eee4ddd-e130-430d-8d6b-429e96de2f2a"
 }
+
+# --------------- ORGS - PROJECTS ----------------
+
+### @name create-project
+POST {{baseUrl}}/organizations/acme-admin/projects
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+{
+  "name": "my-project",
+  "description": "My first project"
+}
+
+
