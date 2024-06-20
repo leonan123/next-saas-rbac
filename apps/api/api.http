@@ -77,3 +77,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
 GET {{baseUrl}}/organizations
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+### @name update-organization
+PUT {{baseUrl}}/organizations/acme-admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+
+{
+  "name": "Acme Inc (Admin) - Updated",
+  "domain": "acme.com.br",
+  "shouldAttachUsersByDomain": true
+}
