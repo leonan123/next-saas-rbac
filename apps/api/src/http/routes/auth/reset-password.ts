@@ -24,8 +24,6 @@ export async function resetPassword(app: FastifyInstance) {
       },
     },
     async (request, reply) => {
-      console.log('entrou')
-      console.log('teste')
       const { code, password } = request.body
 
       const tokenFromCode = await prisma.token.findUnique({

@@ -24,7 +24,7 @@ export async function updateOrganization(app: FastifyInstance) {
           body: z.object({
             name: z.string(),
             domain: z.string().nullish(),
-            avatarUrl: z.string().nullish(),
+            avatarUrl: z.string().url().nullish(),
             shouldAttachUsersByDomain: z.boolean().optional(),
           }),
           params: z.object({

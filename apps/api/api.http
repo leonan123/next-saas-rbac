@@ -134,3 +134,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
   "name": "updated",
   "description": ""
 }
+
+# --------------- ORGS - MEMBERS ----------------
+
+### @name get-members
+GET {{baseUrl}}/organizations/acme-admin/members
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
