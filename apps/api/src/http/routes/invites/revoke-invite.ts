@@ -6,22 +6,23 @@ import { auth } from '@/http/middlewares/auth'
 import { prisma } from '@/lib/prisma'
 import { getUserPermissions } from '@/utils/get-user-permissions'
 
+import { BadRequestError } from '../_errors/bad-request-error'
 import { UnauthorizedError } from '../_errors/unauthorized-error'
 
-export async function removeMember(app: FastifyInstance) {
+export async function revokeInvite(app: FastifyInstance) {
   app
     .withTypeProvider<ZodTypeProvider>()
     .register(auth)
     .delete(
-      '/organizations/:slug/members/:memberId',
+      '/organizations/:slug/invites/:inviteId',
       {
         schema: {
-          tags: ['members'],
-          summary: 'Remove a member from the organization.',
+          tags: ['Invites'],
+          summary: 'Revoke an invite.',
           security: [{ bearerAuth: [] }],
           params: z.object({
             slug: z.string(),
-            memberId: z.string().uuid(),
+            inviteId: z.string().uuid(),
           }),
           response: {
             204: z.null(),
@@ -29,23 +30,32 @@ export async function removeMember(app: FastifyInstance) {
         },
       },
       async (request, reply) => {
-        const { slug, memberId } = request.params
-        const { membership, organization } =
+        const { slug, inviteId } = request.params
+        const { organization, membership } =
           await request.getUserMembership(slug)
+
         const userId = membership.userId
 
         const { cannot } = getUserPermissions(userId, membership.role)
 
-        if (cannot('delete', 'User')) {
-          throw new UnauthorizedError(
-            "You're not allowed to remove this member from the organization.",
-          )
+        if (cannot('delete', 'Invite')) {
+          throw new UnauthorizedError("You're not allowed to delete an invite.")
         }
 
-        await prisma.member.delete({
+        const invite = await prisma.invite.findUnique({
           where: {
-            id: memberId,
+            id: inviteId,
             organizationId: organization.id,
+          },
+        })
+
+        if (!invite) {
+          throw new BadRequestError('Invite not found.')
+        }
+
+        await prisma.invite.delete({
+          where: {
+            id: inviteId,
           },
         })
 

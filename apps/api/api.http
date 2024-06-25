@@ -17,7 +17,7 @@ POST {{baseUrl}}/sessions/password
 Content-Type: application/json
 
 {
-  "email": "johndoe@gmail.com",
+  "email": "Xzavier_Ruecker@hotmail.com",
   "password": "123456"
 }
 
@@ -140,4 +140,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3Y
 ### @name get-members
 GET {{baseUrl}}/organizations/acme-admin/members
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzM1YjE3YS04NTdiLTQ0YmEtOWQ0My03NzRjZjlkNzAwY2IiLCJpYXQiOjE3MTg4OTQ2MDUsImV4cCI6MTcxOTQ5OTQwNX0.aLw0damUUexlBVAjHGdG3K_HZJd8lauCJ2CFoyiQ-RQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNGI1NTlmZC1iODQ0LTQ4YjgtODEyYi00ZmFjN2MyZDhjYjkiLCJpYXQiOjE3MTkyNzc0NzEsImV4cCI6MTcxOTg4MjI3MX0.wpqeoJEHOcISJPcJh-GiIFVlK3Sa2QxtBBSdqrJmnMY
+
+### @name remove-member
+DELETE {{baseUrl}}/organizations/acme-admin/members/e549d16a-591d-4567-8abf-25f5b8b0b6f2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNGI1NTlmZC1iODQ0LTQ4YjgtODEyYi00ZmFjN2MyZDhjYjkiLCJpYXQiOjE3MTkyNzc0NzEsImV4cCI6MTcxOTg4MjI3MX0.wpqeoJEHOcISJPcJh-GiIFVlK3Sa2QxtBBSdqrJmnMY
+
+### @name update-members
+PUT {{baseUrl}}/organizations/acme-admin/members/32f6cb23-a420-4919-bf4b-3c914c3a2a10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNGI1NTlmZC1iODQ0LTQ4YjgtODEyYi00ZmFjN2MyZDhjYjkiLCJpYXQiOjE3MTkyNzc0NzEsImV4cCI6MTcxOTg4MjI3MX0.wpqeoJEHOcISJPcJh-GiIFVlK3Sa2QxtBBSdqrJmnMY
+
+{
+  "role": "ADMIN"
+}
