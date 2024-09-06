@@ -2,8 +2,10 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
+import { Providers } from './providers'
+
 export const metadata: Metadata = {
-  title: 'Create Next App',
+  title: 'Next Saas RBAC',
 }
 
 export default function RootLayout({
@@ -12,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="dark">
-      <body>{children}</body>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className="px-4">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

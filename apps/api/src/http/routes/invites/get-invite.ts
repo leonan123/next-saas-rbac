@@ -26,6 +26,7 @@ export async function getInvite(app: FastifyInstance) {
               createdAt: z.date(),
               organization: z.object({
                 name: z.string(),
+                slug: z.string(),
               }),
               author: z
                 .object({
@@ -61,6 +62,7 @@ export async function getInvite(app: FastifyInstance) {
           organization: {
             select: {
               name: true,
+              slug: true,
             },
           },
         },
